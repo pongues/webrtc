@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>test</title>
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" type="text/css" href="./index.css">
+</head>
+<body>
+	<div id="divRight">
+		<input id="checkbox" type="checkbox">
+		<label for="checkbox"><font class="on" style="user-select: none;">→</font><font class="off" style="user-select: none;">←</font></label>
+		<div id="divConfig">
+			<div class="select">
+				<p style="user-select: none;">Audio input source<br/><select id="audioSource"></select><p>
+				<p style="user-select: none;">Audio output destination<br/><select id="audioOutput"></select><p>
+				<p style="user-select: none;">Video source<br/><select id="videoSource"></select><p>
+			</div>
+		</div>
+	</div>
+	<div id="divCenter">
+		<video id="video" playsinline autoplay></video>
+	</div>
+
+	<script type="text/javascript" src="https://webrtc.github.io/adapter/adapter-7.6.4.js"></script>
+	<!--script type="text/javascript" src="./index.js"></script-->
+	<script type="text/javascript" src="https://webrtc.github.io/samples/src/content/devices/input-output/js/main.js"></script>
+</body>
+</html>
